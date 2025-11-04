@@ -6,16 +6,15 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
-  background-color: #ffffff;
+  color: #000;
+  background-color: #fff;
 }
 
-/* ===================== HEADER & NAV ===================== */
+/* ===================== HEADER ===================== */
 .header {
   background-color: #f2f2f2;
 }
 
-/* nav é filho direto de header */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -23,40 +22,26 @@
   padding: 24px 80px;
 }
 
-/* logo dentro da nav */
 .nav__logo {
   width: 58px;
   height: 80px;
-  display: block;
 }
 
-/* lista de links da nav
-   margin: 0 (remove qualquer margin-top padrão) */
 .nav__links {
   display: flex;
   justify-content: space-between;
   column-gap: 20px;
   list-style-type: none;
-  margin: 0;      /* correção: definir margin inteira para 0 */
+  margin: 0;
   padding: 0;
 }
 
-/* link individual da nav
-   font-weight conforme roteiro (500) */
 .nav__link {
   text-decoration: none;
-  color: #000000;
-  font-weight: 500; /* ajuste conforme roteiro */
+  color: #000;
   cursor: pointer;
 }
 
-/* header__link caso exista (link dentro do header) */
-.header__link {
-  text-decoration: none;
-  color: #000000;
-}
-
-/* ===================== HEADER CONTENT ===================== */
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -64,7 +49,6 @@
   padding: 0 80px;
 }
 
-/* título principal do header */
 .header__title {
   max-width: 635px;
   font-size: 62px;
@@ -74,7 +58,6 @@
   margin-bottom: 0;
 }
 
-/* descrição abaixo do título */
 .header__description {
   max-width: 515px;
   font-size: 20px;
@@ -83,26 +66,21 @@
   margin-bottom: 0;
 }
 
-/* imagem ilustrativa do header */
 .header__image {
   max-width: 636px;
   height: auto;
-  display: block;
 }
 
-/* =========== IMPORTANTE: manter ESTILOS ORIGINAIS do header__footer =========== */
-/* Não altere estes estilos - estão iguais ao código inicial fornecido */
 .header__footer {
-  margin-top: 40px;
-  text-align: right;
+  padding: 0 80px;
 }
 
 .header__address {
   font-size: 14px;
-  color: #555555;
+  color: #555;
 }
 
-/* ===================== STAFF (SEÇÃO) ===================== */
+/* ===================== STAFF SECTION ===================== */
 .staff {
   background-image: url("../images/staff_picks_background.jpg");
   background-size: cover;
@@ -175,16 +153,5 @@
   .header__image {
     margin-top: 40px;
     width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .staff__cards {
-    gap: 24px;
-  }
-
-  .card {
-    width: 90%;
-    height: auto;
   }
 }
