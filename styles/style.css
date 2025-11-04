@@ -1,0 +1,12 @@
+/* Estilos base - Sprint 3 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #fff;
+}
