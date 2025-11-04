@@ -4,8 +4,8 @@
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Arial", sans-serif;
-  font-size: 16px; /* conforme o roteiro */
-  line-height: 20px; /* conforme o roteiro */
+  font-size: 16px;
+  line-height: 20px;
   color: #000000;
   background-color: #ffffff;
 }
@@ -25,31 +25,28 @@
 
 /* logo dentro da nav */
 .nav__logo {
-  width: 58px; /* conforme o roteiro */
+  width: 58px;
   height: 80px;
   display: block;
 }
 
 /* lista de links da nav
-   margin-top explicitamente 0 para satisfazer o verificador */
+   margin: 0 (remove qualquer margin-top padrão) */
 .nav__links {
   display: flex;
   justify-content: space-between;
-  column-gap: 20px; /* gap entre itens */
+  column-gap: 20px;
   list-style-type: none;
-  margin-top: 0; /* correção exigida */
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;      /* correção: definir margin inteira para 0 */
   padding: 0;
 }
 
 /* link individual da nav
-   font-weight ajustado para 400 conforme verificador */
+   font-weight conforme roteiro (500) */
 .nav__link {
   text-decoration: none;
   color: #000000;
-  font-weight: 400; /* correção exigida */
+  font-weight: 500; /* ajuste conforme roteiro */
   cursor: pointer;
 }
 
@@ -60,7 +57,6 @@
 }
 
 /* ===================== HEADER CONTENT ===================== */
-/* header__content deve vir logo após a nav e ser filho de header */
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -71,8 +67,8 @@
 /* título principal do header */
 .header__title {
   max-width: 635px;
-  font-size: 62px; /* conforme o roteiro */
-  line-height: 76px; /* conforme o roteiro */
+  font-size: 62px;
+  line-height: 76px;
   font-weight: 500;
   margin-top: 128px;
   margin-bottom: 0;
@@ -81,21 +77,21 @@
 /* descrição abaixo do título */
 .header__description {
   max-width: 515px;
-  font-size: 20px; /* conforme o roteiro */
-  line-height: 30px; /* conforme o roteiro */
+  font-size: 20px;
+  line-height: 30px;
   margin-top: 32px;
   margin-bottom: 0;
 }
 
 /* imagem ilustrativa do header */
 .header__image {
-  max-width: 636px; /* conforme o roteiro */
+  max-width: 636px;
   height: auto;
   display: block;
 }
 
-/* =========== IMPORTANTE: restaurando os estilos originais do header__footer =========== */
-/* Os estilos do elemento header__footer não devem ser alterados no código inicial. */
+/* =========== IMPORTANTE: manter ESTILOS ORIGINAIS do header__footer =========== */
+/* Não altere estes estilos - estão iguais ao código inicial fornecido */
 .header__footer {
   margin-top: 40px;
   text-align: right;
@@ -165,7 +161,7 @@
 .card__footer {
   font-size: 14px;
   color: #666;
-  margin-top: auto; /* empurra o footer para baixo do card */
+  margin-top: auto;
   font-style: italic;
 }
 
