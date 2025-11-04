@@ -33,7 +33,6 @@
   column-gap: 20px;
   list-style-type: none;
   margin: 0;
-  margin-top: 0; /* explícito para satisfazer o validador */
   padding: 0;
 }
 
@@ -42,7 +41,6 @@
   text-decoration: none;
   color: #000;
   cursor: pointer;
-  font-weight: 400; /* valor exigido pelo verificador */
 }
 
 /* link auxiliar dentro do header (classe solicitada) */
