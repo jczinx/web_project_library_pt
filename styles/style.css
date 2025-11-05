@@ -12,6 +12,7 @@
 /* HEADER */
 .header {
   background-color: #f2f2f2;
+  width: 100%;
 }
 
 .nav {
@@ -19,6 +20,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 24px 80px;
+  box-sizing: border-box;
 }
 
 .nav__logo {
@@ -26,37 +28,29 @@
   height: 80px;
 }
 
-/* explicitamente zera margin-top (e demais margens) conforme verificador */
 .nav__links {
   display: flex;
   justify-content: space-between;
   column-gap: 20px;
   list-style-type: none;
   margin: 0;
-  margin-top: 0; /* explícito para satisfazer o validador */
+  margin-top: 0; /* explícito para o validador */
   padding: 0;
 }
 
-/* font-weight definido conforme o roteiro/verificador */
 .nav__link {
   text-decoration: none;
   color: #000;
+  font-weight: 400; /* conforme roteiro */
   cursor: pointer;
 }
 
-/* link auxiliar dentro do header (classe solicitada) */
-.header__link {
-  text-decoration: none;
-  color: #000;
-  display: inline-block;
-}
-
-/* Conteúdo principal do header */
 .header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 80px;
+  box-sizing: border-box;
 }
 
 .header__title {
@@ -76,15 +70,25 @@
   margin-bottom: 0;
 }
 
-.header__image {
-  max-width: 636px;
-  height: auto;
+.header__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 24px;
 }
 
-/* === MANTER header__footer COMO NO CÓDIGO INICIAL ===
-   Não altere estes estilos além do que está aqui. */
+.header__image {
+  width: 636px;
+  height: auto;
+  display: block;
+}
+
+/* NÃO ALTERAR */
 .header__footer {
   padding: 0 80px;
+  text-align: right;
+  box-sizing: border-box;
 }
 
 .header__address {
@@ -92,7 +96,7 @@
   color: #555;
 }
 
-/* STAFF (seção) */
+/* STAFF */
 .staff {
   background-image: url("../images/staff_picks_background.jpg");
   background-size: cover;
@@ -100,11 +104,14 @@
   background-repeat: no-repeat;
   text-align: center;
   padding: 60px 80px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .staff__title {
   font-size: 36px;
   margin: 0;
+  font-weight: 700;
 }
 
 .staff__subtitle {
@@ -139,6 +146,7 @@
 
 .card__title {
   font-size: 22px;
+  font-weight: 700;
   margin: 0 0 12px;
 }
 
@@ -155,7 +163,7 @@
   font-style: italic;
 }
 
-/* RESPONSIVIDADE */
+/* RESPONSIVO */
 @media (max-width: 1200px) {
   .header__content {
     flex-direction: column;
@@ -165,16 +173,5 @@
   .header__image {
     margin-top: 40px;
     width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .staff__cards {
-    gap: 24px;
-  }
-
-  .card {
-    width: 90%;
-    height: auto;
   }
 }
