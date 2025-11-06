@@ -26,7 +26,7 @@
 }
 
 .nav__logo {
-  width: 105px;
+  width: 58px;
   height: 80px;
 }
 
@@ -35,7 +35,7 @@
   justify-content: space-between;
   column-gap: 20px;
   list-style-type: none;
-  margin-top: 42px; /* conforme roteiro */
+  margin-top: 0; /* conforme roteiro */
   margin-bottom: 0;
   padding: 0;
 }
@@ -43,7 +43,7 @@
 .nav__link {
   text-decoration: none;
   color: #000;
-  font-weight: 500; /* valor correto segundo roteiro */
+  font-weight: 400; /* valor correto segundo roteiro */
   cursor: pointer;
 }
 
@@ -54,7 +54,6 @@
   padding: 0 80px;
   box-sizing: border-box;
 }
-
 
 .header__title {
   max-width: 635px;
@@ -86,7 +85,6 @@
   height: auto;
   display: block;
 }
-
 
 /* ⚠️ NÃO ALTERAR */
 .header__footer {
@@ -127,7 +125,6 @@
   margin-top: 8px;
   margin-bottom: 40px;
 }
-
 
 .staff__cards {
   display: flex;
