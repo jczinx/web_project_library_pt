@@ -32,14 +32,14 @@
   justify-content: space-between;
   column-gap: 20px;
   list-style-type: none;
-  margin: 0; /* conforme roteiro */
+  margin-top: 0; /* conforme roteiro */
   padding: 0;
 }
 
 .nav__link {
   text-decoration: none;
   color: #000;
-  font-weight: 400; /* conforme roteiro */
+  font-weight: 500; /* conforme roteiro */
   cursor: pointer;
 }
 
