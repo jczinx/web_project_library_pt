@@ -76,10 +76,11 @@
 }
 
 .header__image {
-  width: 636px;
+  width: 636px; /* conforme o roteiro */
   height: auto;
   display: block;
 }
+
 
 /* NÃO ALTERAR: bloco fixo do roteiro */
 .header__footer {
