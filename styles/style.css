@@ -162,6 +162,12 @@
   margin-top: auto;
   font-style: italic;
 }
+.card__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 
 /* RESPONSIVO */
 @media (max-width: 1200px) {
