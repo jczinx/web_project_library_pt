@@ -76,7 +76,7 @@
 }
 
 .header__image {
-  width: 636px; /* conforme o roteiro */
+  max-width: 636px; /* conforme o roteiro */
   height: auto;
   display: block;
 }
