@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca Triple Peaks</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo.svg"
+            alt="Logotipo da Biblioteca Triple Peaks"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#staff">Escolhas da Equipe</a></li>
+            <li><a class="nav__link" href="#events">Eventos</a></li>
+            <li><a class="nav__link" href="#staff">Seja um membro</a></li>
+            <li><a class="nav__link" href="#">Contatos</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__content">
+          <div>
+            <h1 class="header__title">Bem-vindo à Biblioteca Triple Peaks</h1>
+            <p class="header__description">
+              Temos o prazer de abrir as portas da nossa biblioteca a todos!
+              Venha expandir seus conhecimentos de desenvolvimento, ou apenas
+              use esse belo local para trabalhar ou estudar. Esse é um lugar
+              legal para estudantes legais!
+            </p>
+            <a href="#staff" class="header__link">Saiba mais</a>
+          </div>
+          <img
+            src="./images/cafe.png"
+            alt="Cena interior da biblioteca com mesas e pessoas"
+            class="header__image"
+          />
+        </div>
+
+        <div class="header__footer">
+          <p class="header__address">Triple Peaks, 200 Success Avenue</p>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="staff" id="staff">
+          <h2 class="staff__title">Escolhas da Equipe</h2>
+          <p class="staff__subtitle">Que nossos leitores adoram</p>
+          <ul class="staff__cards">
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Algoritmos: Teoria e Prática</h3>
+                <p class="card__text">
+                  O nome deste livro é autoexplicativo...
+                </p>
+                <p class="card__footer">Cormen, Leiserson, Rivest, Stein</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">SICP</h3>
+                <p class="card__text">Um dos melhores livros...</p>
+                <p class="card__footer">Abelson, Sussman</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">O Codificador Limpo</h3>
+                <p class="card__text">Compilado por Robert C. Martin...</p>
+                <p class="card__footer">Robert C. Martin</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Code Complete</h3>
+                <p class="card__text">Clássico da engenharia...</p>
+                <p class="card__footer">Steve McConnell</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- EVENTS -->
+        <section class="events" id="events">
+          <div class="events__heading">
+            <h2 class="events__title">Próximos eventos:</h2>
+            <h3 class="events__subtitle">
+              Em homenagem à Joan Feynman: Mulheres na Astrofísica
+            </h3>
+          </div>
+
+          <!-- events__content é o container flex -->
+          <div class="events__content">
+            
+            <!-- Item Flex 1: events__info -->
+            <div class="events__info">
+              <div class="events__info-section">
+                <div class="event-info">
+                  <div class="event-info__item">
+                    <img
+                      src="./images/icon_calendar.svg"
+                      class="event-info__icon"
+                      alt="Ícone de calendário"
+                    />
+                    <p class="event-info__text">Segunda-feira, 12 de janeiro</p>
+                  </div>
+
+                  <div class="event-info__item">
+                    <img
+                      src="./images/icon_map.svg"
+                      class="event-info__icon"
+                      alt="Ícone de localização"
+                    />
+                    <p class="event-info__text">
+                      Biblioteca Triple Peaks – Auditório
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="events__description">
+                Nesse evento, homenageamos Joan Feynman explorando a história
+                das grandes mulheres da astrofísica...
+              </p>
+
+              <a href="#" class="events__more">Mais eventos →</a>
+            </div>
+
+            <!-- Item Flex 2: events__cover (MOVVI ISSO PARA DENTRO DO EVENTS__CONTENT) -->
+            <div class="events__cover">
+              <img
+                src="./images/cafe.png"
+                class="events__image"
+                alt="Ilustração de um café na biblioteca (base para retratos)"
+              />
+
+              <div class="person person_name_feynman">
+                <p class="person__caption">Joan Feynman</p>
+                <img
+                  src="./images/person_feynman.png"
+                  class="person__image person__image_size_l"
+                  alt="Retrato de Joan Feynman"
+                />
+              </div>
+
+              <div class="person person_name_burbidge">
+                <p class="person__caption">Margaret Burbidge</p>
+                <img
+                  src="./images/person_burbidge.png"
+                  class="person__image person__image_size_m"
+                  alt="Retrato de Margaret Burbidge"
+                />
+              </div>
+
+              <div class="person person_name_cannon">
+                <img
+                  src="./images/person_cannon.png"
+                  class="person__image person__image_size_m"
+                  alt="Retrato de Annie Jump Cannon"
+                />
+                <p class="person__caption">Annie Jump Cannon</p>
+              </div>
+
+              <div class="person person_name_mitchell">
+                <p class="person__caption">Maria Mitchell</p>
+                <img
+                  src="./images/person_mitchell.png"
+                  class="person__image person__image_size_s"
+                  alt="Retrato de Maria Mitchell"
+                />
+              </div>
+
+              <div class="person person_name_tarter">
+                <p class="person__caption">Jill Tarter</p>
+                <img
+                  src="./images/person_tarter.png"
+                  class="person__image person__image_size_m"
+                  alt="Retrato de Jill Tarter"
+                />
+              </div>
+            </div>
+            
+          </div>
+          <!-- fim events__content -->
+
+        </section>
+        <!-- Fim da seção events -->
+      </main>
+    </div>
+  </body>
+</html>
